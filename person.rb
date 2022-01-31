@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+require_relative './corrector'
+
 class Person
   attr_accessor :name, :age
   attr_reader :id
@@ -7,6 +11,11 @@ class Person
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @corrector = Corrector.new
+  end
+
+  def validate_name
+    @name = @corrector.correct_name(name)
   end
 
   def of_age?
@@ -18,3 +27,5 @@ class Person
   end
   private :of_age?
 end
+
+puts Person.new(22, 'bhvhjdsbjedsjvnknvkjdn').validate_name
