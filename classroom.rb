@@ -1,4 +1,4 @@
-@@ -1,5 +1,16 @@
+@ -1,5 +1,16 @@
 require_relative './student'
 
 class Classroom
