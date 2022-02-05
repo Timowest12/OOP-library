@@ -57,5 +57,20 @@ class App
     end
   end
   
+   def list_all_books
+    puts 'no books found, add a book.' if @books.empty?
+
+    @books.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
+    sleep 0.75
+  end
+
+  def list_all_people
+    puts 'no people found add person or teacher.' if @people.empty?
+    @people.map { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
+    sleep 0.75
+  end
+  
+  
+  
 end
 main
