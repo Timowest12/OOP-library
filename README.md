@@ -20,6 +20,8 @@ If you want to use this repo as a template, you can do so; follow the instructio
 Copy this link this link
 Open your terminal or command line
 Run "git clone Paste this link"
+install ruby if you havent done so see instructions here: https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/installing-ruby-ruby-programming
+run main.rb
 
 ##
 
