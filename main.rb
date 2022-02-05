@@ -1,4 +1,3 @@
-
 require_relative 'person'
 require_relative 'student'
 require_relative 'teacher'
@@ -13,7 +12,7 @@ class App
     @rentals = []
     @class = Classroom.new('Group 6')
   end
-  
+
   def run
     puts 'Welcome!'
     loop do
@@ -25,8 +24,8 @@ class App
     end
     puts 'Thank you for using our Library!'
   end
-  
-    def menu
+
+  def menu
     puts
     puts 'Please choose an option by entering a number'
     puts '1 - List all books'
@@ -36,8 +35,8 @@ class App
     puts '5 - Create a rental'
     puts '6 - List all rentals for a given person id'
     puts '7 - Exit'
-  end
-  
+end
+
   def get_num(option)
     case option
     when '1'
@@ -56,20 +55,20 @@ class App
       puts 'enter a number between 1 and 7'
     end
   end
-  
-   def list_all_books
+
+  def list_all_books
     puts 'no books found, add a book.' if @books.empty?
 
     @books.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
     sleep 0.75
-  end
+ end
 
   def list_all_people
     puts 'no people found add person or teacher.' if @people.empty?
     @people.map { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
     sleep 0.75
   end
-  
+
   def create_person
     print 'Do you want to create a student (1) or teacher (2) [Input a number]: '
     option = gets.chomp
@@ -100,6 +99,7 @@ class App
     puts 'Student created!'
     sleep 0.75
   end
+
   def create_teacher
     print 'Age: '
     age = gets.chomp.to_i
@@ -130,8 +130,6 @@ class App
     puts 'Book added successfully'
     sleep 0.75
   end
-  
-  
 end
 def create_rental
   puts 'Select a book from the following list by number'
@@ -155,6 +153,7 @@ def create_rental
   puts 'Rental created successfully'
   sleep 0.75
 end
+
 def list_rentals_by_person_id
   print 'ID of person: '
   id = gets.chomp.to_i
