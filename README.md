@@ -29,7 +29,8 @@ cd into OOP-library
 run command main.rb, that should open the starting screen to the console ui
 
 ##
-[Screenshot from 2022-02-05 22-14-24](https://user-images.githubusercontent.com/13661892/152659263-335438f9-0f6a-43ab-968c-5c0f8ed7729e.png)
+![Screenshot from 2022-02-05 22-14-24](https://user-images.githubusercontent.com/13661892/152659287-b2224151-ac37-49af-b965-5095001b9181.png)
+
 
 👤 **Timo Wester**
 
