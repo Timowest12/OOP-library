@@ -25,7 +25,7 @@ install ruby if you havent done so see instructions here: https://www.theodinpro
 
 cd into OOP-library
 
-run main.rb
+run command main.rb, that should open the starting screen to the console ui
 
 ##
 
