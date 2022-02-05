@@ -148,7 +148,7 @@ def create_rental
   print 'Date: '
   date = gets.chomp.to_s
 
-  rental = Rental.new(date, @books[book_id],@people[person_id])
+  rental = Rental.new(date, @books[book_id], @people[person_id])
   @rentals << rental
 
   puts 'Rental created successfully'
