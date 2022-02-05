@@ -35,7 +35,7 @@ class App
     puts '5 - Create a rental'
     puts '6 - List all rentals for a given person id'
     puts '7 - Exit'
-end
+  end
 
   def get_num(option)
     case option
@@ -61,7 +61,7 @@ end
 
     @books.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
     sleep 0.75
- end
+  end
 
   def list_all_people
     puts 'no people found add person or teacher.' if @people.empty?
@@ -131,6 +131,7 @@ end
     sleep 0.75
   end
 end
+
 def create_rental
   puts 'Select a book from the following list by number'
   @books.each_with_index { |book, index| puts "#{index}) Title: #{book.title}, Author: #{book.author}" }
